@@ -1,0 +1,102 @@
+/* General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar - Adjusted to Match Home Page */
+.navbar {
+  padding: 1rem 0; /* Increased padding for a larger navbar */
+  background-color: #2C3E50 !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .navbar-brand {
+  font-size: 1.8rem; /* Increased font size */
+  font-weight: bold;
+  color: #f5f5f5 !important;
+}
+
+.navbar .nav-link {
+  font-size: 1.2rem; /* Slightly larger font size */
+  margin-left: 1.5rem;
+  color: rgba(245, 245, 245, 0.8) !important;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover, .navbar .nav-link.active {
+  color: #f8c471 !important; /* Golden color on hover */
+}
+
+/* About Us Section */
+h2 {
+  color: #2C3E50;
+}
+
+p.lead {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Adjust First Image Size & Height */
+.mission-img {
+  max-width: 85%; /* Slightly bigger width */
+  height: 380px; /* Adjusted height */
+  object-fit: cover; /* Prevents distortion */
+  display: block;
+  margin: 0 auto; /* Center the image */
+  border-radius: 10px;
+}
+
+/* Ensure Responsiveness */
+@media (max-width: 768px) {
+  .mission-img {
+    max-width: 100%; /* Full width on mobile screens */
+    height: 300px; /* Smaller height for mobile */
+  }
+}
+
+/* Other Images */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Sections */
+h3 {
+  color: #1C2833;
+}
+
+.text-muted {
+  font-size: 1.1rem;
+  color: #666 !important;
+}
+
+/* List Styles */
+.list-unstyled li {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.list-unstyled i {
+  font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+  background-color: #2C3E50;
+  color: white;
+  padding: 30px 0; /* Increased padding */
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}

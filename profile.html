@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Create Your Profile</title>
+    <link rel="stylesheet" href="profile.css" />
+</head>
+<body>
+    <div class="profile-container">
+        <h2>Create Your Profile</h2>
+        <p class="sub-text">Complete your profile to find the best internship matches.</p>
+        
+        <form id="profileForm">
+            <div class="input-group" id="skillsGroup">
+                <label for="skills">Skills</label>
+                <select id="skills" required>
+                    <option value="">-- Select Your Skill --</option>
+                    <option value="Python Developer">Python Developer</option>
+                    <option value="Java Developer">Java Developer</option>
+                    <option value="Frontend">Frontend</option>
+                    <option value="Machine Learning">Machine Learning</option>
+                    <option value="Web Developer">Web Developer</option>
+                    <option value="Data Science">Data Science</option>
+                    <option value="UI/UX">UI/UX</option>
+                    <option value="Any Other">Any Other</option>
+                </select>
+            </div>
+
+            <div class="input-group" id="manualSkillGroup" style="display:none;">
+                <label for="manualSkill">Enter Your Skill</label>
+                <input type="text" id="manualSkill" placeholder="Type your skill here" />
+            </div>
+
+            <div class="input-group">
+                <label for="location">Location</label>
+                <input type="text" id="location" placeholder="Enter your city or region" required />
+            </div>
+
+            <div class="input-group">
+                <label for="profilePic">Profile Picture (Optional)</label>
+                <div class="file-upload">
+                    <input type="file" id="profilePic" accept="image/*" />
+                    <span>Choose File</span>
+                </div>
+            </div>
+
+            <button type="submit" id="saveBtn" class="profile-btn">Save Profile</button>
+        </form>
+
+        <p id="message" style="color: green; margin-top: 15px;"></p>
+    </div>
+
+    <script src="profile.js"></script>
+</body>
+</html>
